@@ -20,8 +20,11 @@ def multiple_lines(count):
  imgs_comb = Image.fromarray( imgs_comb)
  imgs_comb.save( 'final.jpg')
  
+ 
 #list_im = ['Test1.jpg', 'Test2.jpg', 'Test3.jpg']
 x=open("new.txt")
+print("ENTER TEXT TO CONVERT")
+x.write(input())
 list1=[]
 listx=[i for i in x.read()]
 y=0
