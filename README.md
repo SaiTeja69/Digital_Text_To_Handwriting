@@ -9,3 +9,7 @@ or just input when prompted by the program
 run the program by
 python handimage.py
 You get your final output in final.jpg
+
+
+Use imglbl to get images of your own
+Tutorial : https://github.com/tzutalin/labelImg
