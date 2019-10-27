@@ -22,9 +22,9 @@ def multiple_lines(count):
  
  
 #list_im = ['Test1.jpg', 'Test2.jpg', 'Test3.jpg']
-x=open("new.txt")
+x=open("new.txt","a")
 print("ENTER TEXT TO CONVERT")
-x.write(input())
+x.write(input()+"\n")
 list1=[]
 listx=[i for i in x.read()]
 y=0
