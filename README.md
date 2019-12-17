@@ -13,3 +13,6 @@ You get your final output in final.jpg
 
 Use imglbl to create data which can be used for converting text to handwriting
 Tutorial : https://github.com/tzutalin/labelImg
+
+Sample Output
+[image](https://github.com/SaiTeja69/Digital_Text_To_Handwriting/blob/master/final.jpg
