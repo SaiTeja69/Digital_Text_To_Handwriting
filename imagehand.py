@@ -10,7 +10,7 @@ def make_image(list1,count):
  imgs_comb.save( str(count)+'.jpg' )  
 def multiple_lines(count):
  list1=[]
- for i in range(1,count+2,1):
+ for i in range(1,count+1,1):
   z=str(i)+".jpg"
   list1.append(z)
  imgs    = [ Image.open(i) for i in list1 ]
@@ -22,9 +22,9 @@ def multiple_lines(count):
  
  
 #list_im = ['Test1.jpg', 'Test2.jpg', 'Test3.jpg']
-x=open("new.txt","a")
-print("ENTER TEXT TO CONVERT")
-x.write(input()+"\n")
+x=open("new.txt","r")
+#print("ENTER TEXT TO CONVERT")
+#x.write(input()+"\n")
 list1=[]
 listx=[i for i in x.read()]
 y=0
