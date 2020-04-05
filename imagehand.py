@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 
+base ='fonts/'
 def make_image(list1,count):
  imgs    = [ Image.open(i) for i in list1 ]
  #min_shape = sorted( [(np.sum(i.size), i.size ) for i in imgs])[0][1]
@@ -27,6 +28,10 @@ x=open("new.txt","r")
 #x.write(input()+"\n")
 list1=[]
 listx=[i for i in x.read()]
+if '\n' in listx[-1]:
+	pass
+else:
+	listx[-1]=listx[-1]+'\n' 
 y=0
 count=0
 for i in listx:
@@ -34,14 +39,14 @@ for i in listx:
   count=count+1
   if(len(list1)<50):
    for i in range(len(list1),50,1):
-    list1.append('space.jpg')
+    list1.append('fonts/space.jpg')
   make_image(list1,count)
   list1.clear()
   continue
  if(i>='a' and i<= 'z') :
-  z=i+".jpg"
+  z=base+i+".jpg"
  else:
-  z='space.jpg'
+  z=base+'space.jpg'
  list1.append(z)
  y=y+1
 if(count>0):
